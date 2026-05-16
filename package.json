@@ -1,0 +1,57 @@
+{
+  "name": "@letter/node",
+  "version": "0.1.0",
+  "description": "Official Node.js client for letter.app — onboarding email drip campaigns. Auto-batching, retries, idempotency.",
+  "license": "MIT",
+  "homepage": "https://letter.app/docs/node-sdk",
+  "author": "letter.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincenzor/letter-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vincenzor/letter-node/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm run clean && pnpm run build"
+  },
+  "keywords": [
+    "letter.app",
+    "letter",
+    "email",
+    "drip",
+    "onboarding",
+    "sdk",
+    "ingestion",
+    "analytics",
+    "track",
+    "identify"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "@types/node": "^22.10.2"
+  }
+}
