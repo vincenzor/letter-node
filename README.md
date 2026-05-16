@@ -1,12 +1,12 @@
-# @letter/node
+# @letterapp/node
 
 Official Node.js client for **[letter.app](https://letter.app)** — onboarding
 email drip campaigns for product teams.
 
 ```bash
-pnpm add @letter/node
-# or: npm install @letter/node
-# or: yarn add @letter/node
+pnpm add @letterapp/node
+# or: npm install @letterapp/node
+# or: yarn add @letterapp/node
 ```
 
 Requires Node **20+**. Ships as ESM with TypeScript types.
@@ -14,7 +14,7 @@ Requires Node **20+**. Ships as ESM with TypeScript types.
 ## Quick start
 
 ```ts
-import { Letter } from "@letter/node";
+import { Letter } from "@letterapp/node";
 
 const letter = new Letter({
   apiKey: process.env.LETTER_API_KEY!, // from Dashboard → Settings → API keys

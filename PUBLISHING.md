@@ -1,18 +1,25 @@
-# Publishing `@letter/node`
+# Publishing `@letterapp/node`
 
 Internal release notes. Not shipped with the package.
 
 ## One-time setup
 
-You need an npm account with the `@letter` scope claimed. First publish from
-this account auto-creates the org.
+You need an npm account that's a member of the `letterapp` org. The org has to
+exist *before* you can publish to it — npm only auto-creates a scope when it
+matches your username.
 
 ```bash
+# 1. Log in to npm.
 npm login
+
+# 2. Create the `letterapp` org (one-time, free for public packages).
+#    There is no CLI for free org creation; do it via the web UI:
+#    https://www.npmjs.com/org/create
+#    - Name: letterapp
+#    - Plan: Free (Open source)
 ```
 
-If the scope is owned by an org rather than a personal account, manage members
-at <https://www.npmjs.com/settings/letter/members>.
+Manage members afterwards at <https://www.npmjs.com/settings/letterapp/members>.
 
 ## Cutting a release
 

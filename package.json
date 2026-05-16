@@ -1,5 +1,5 @@
 {
-  "name": "@letter/node",
+  "name": "@letterapp/node",
   "version": "0.1.0",
   "description": "Official Node.js client for letter.app — onboarding email drip campaigns. Auto-batching, retries, idempotency.",
   "license": "MIT",

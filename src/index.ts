@@ -1,5 +1,5 @@
 /**
- * @letter/node — official Node.js SDK for letter.app
+ * @letterapp/node — official Node.js SDK for letter.app
  *
  * Two modes:
  *  - Long-running server (default): auto-batches calls, flushes every 100ms
